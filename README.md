@@ -6,6 +6,9 @@
 
 This platform provides real-time sentiment analysis on stock-related news. It fetches news from over 60 different sources and performs sentiment classification. Additionally, it integrates an AI chatbot that allows users to query the fetched news using a Retrieval-Augmented Generation (RAG) model.
 
+🎥 **Demo Video:** [Watch Here](https://drive.google.com/file/d/15RiYhf4o117eKrvGwGUzpoif5IaUCGuP/view?usp=sharing)
+
+
 ## Features
 - **Real-Time Data Fetching:** 
   - Scrapes news from over 60+ websites using Selenium for web scraping.
