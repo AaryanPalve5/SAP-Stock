@@ -144,5 +144,29 @@ def sentiment():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+
+
+
+@app.route("/api/chatbot", methods=["POST", "OPTIONS"])
+def api_chatbot():
+    # Handle CORS preflight
+    if request.method == "OPTIONS":
+        return "", 200
+
+    data = request.get_json(silent=True) or {}
+    question = (data.get("message") or data.get("question") or "").strip()
+    if not question:
+        return jsonify({"error": "Missing 'message' or 'question' in request body."}), 400
+
+    try:
+        result = query_rag(question)
+        return jsonify({"response": result}), 200
+    except Exception as e:
+        logging.exception("Error in /api/chatbot")
+        return jsonify({"error": "An error occurred while processing your query."}), 500
+
+
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)

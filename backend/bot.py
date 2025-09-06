@@ -23,7 +23,7 @@ def query_rag(question: str) -> str:
     {question}
     """
     try:
-        news_file = "backend\\news_file.csv"
+        news_file = "news_file.csv"
         news_context = ""
 
         with open(news_file, "r", encoding="utf-8") as f:
