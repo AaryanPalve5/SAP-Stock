@@ -1,6 +1,5 @@
 # Stock News Sentiment Analysis Platform
-![DALL·E-2024-10-30-22 57](https://github.com/user-attachments/assets/b2266271-f105-4f4c-a8a4-79c3147d111b)
-
+![DALL·E-2024-10-30-22 57](ss.png)
 ![sap_stocks](https://github.com/user-attachments/assets/dc342b2e-c589-4f2a-bf9a-b87e8245daa5)
 ![sap_stock2](https://github.com/user-attachments/assets/810bb33c-d115-41d0-92f5-1fb67005f675)
 
